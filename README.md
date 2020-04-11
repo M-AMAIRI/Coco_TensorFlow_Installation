@@ -1,5 +1,3 @@
-# Coco_TensorFlow_Installation
-
 # How to find which version of TensorFlow is installed in my system? ?
 
 ```bash
