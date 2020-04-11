@@ -19,12 +19,15 @@ Then Download models Folder from
 https://github.com/tensorflow/models
 
 and extract your zip file under TensorFlow folder 
-    TensorFlow
+```
+   TensorFlow
     └─ models
         ├── official
         ├── research
         ├── samples
         └── tutorials
+
+```
 
 # Protobuf Installation/Compilation
  
@@ -70,8 +73,11 @@ from object_detection.utils import visualization_utils as vis_util
 #### references :
 
 object detection tutorial : https://github.com/tensorflow/models/blob/master/research/object_detection/object_detection_tutorial.ipynb
+
 TensorFlow : https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html
+
 Article : https://www.actuia.com/contribution/jeancharlesrisch/segmentation-et-detection-dobjets-en-temps-reel-avec-tensorflow/
+
 Code main Github :https://github.com/jcRisch/Real_Time_Pixel_Segmentation
 
 
