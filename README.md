@@ -81,6 +81,6 @@ Article : https://www.actuia.com/contribution/jeancharlesrisch/segmentation-et-d
 Code main Github :https://github.com/jcRisch/Real_Time_Pixel_Segmentation
 
 
-
+                                                                                                                  M-AMAIRI 
 
 
