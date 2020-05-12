@@ -90,10 +90,6 @@ with detection_graph.as_default():
       # Score is shown on the result image, together with the class label.
       scores = detection_graph.get_tensor_by_name('detection_scores:0')
       classes = detection_graph.get_tensor_by_name('detection_classes:0')
-      print("*******************************")
-      print(np.squeeze(boxes))
-      print(np.squeeze(classes).astype(np.int32))
-      print(np.squeeze(scores))
 	
       num_detections = detection_graph.get_tensor_by_name('num_detections:0')
       # Actual detection.
@@ -101,7 +97,7 @@ with detection_graph.as_default():
           [boxes, scores, classes, num_detections],
           feed_dict={image_tensor: image_np_expanded})
       # Visualization of the results of a detection.
-      vis_util.visualize_boxes_and_labels_on_image_array(
+      information=vis_util.visualize_boxes_and_labels_on_image_array(
           image_np,
           np.squeeze(boxes),
           np.squeeze(classes).astype(np.int32),
@@ -109,6 +105,7 @@ with detection_graph.as_default():
           category_index,
           use_normalized_coordinates=True,
           line_thickness=8)
+        print(information)
 #      plt.figure(figsize=IMAGE_SIZE)
 #      plt.imshow(image_np)
       cv2.imshow('image',cv2.resize(image_np,(1280,960)))
