@@ -90,6 +90,8 @@ with detection_graph.as_default():
       # Score is shown on the result image, together with the class label.
       scores = detection_graph.get_tensor_by_name('detection_scores:0')
       classes = detection_graph.get_tensor_by_name('detection_classes:0')
+      print(classes)
+      print(scores)
       num_detections = detection_graph.get_tensor_by_name('num_detections:0')
       # Actual detection.
       (boxes, scores, classes, num_detections) = sess.run(
